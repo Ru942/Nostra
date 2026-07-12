@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Collections</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Style+Script&family=Yuyu&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Announcement -->
+
+    <section class="announcement">
+
+        <p>
+            Sign Up and <strong>GET 20% OFF</strong> for your first order
+        </p>
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </section>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <h1>Nostra</h1>
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="index.html#newarrival">New Arrival</a></li>
+
+            <li><a href="index.html#wanted">Most Wanted</a></li>
+
+            <li><a href="collection.html" class="active">Collections</a></li>
+
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+
+        <div class="menu-btn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+
+    </nav>
+
+    <!-- Mobile Menu -->
+
+    <div class="mobile-overlay"></div>
+
+    <div class="mobile-menu">
+
+        <div class="mobile-header">
+
+            <h2>Nostra</h2>
+
+            <div class="close-btn">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </div>
+
+        </div>
+
+        <a href="index.html">Home</a>
+
+        <a href="index.html#newarrival">New Arrival</a>
+
+        <a href="index.html#wanted">Most Wanted</a>
+
+        <a href="collection.html">Collections</a>
+
+        <a href="contact.html">Contact Us</a>
+
+    </div>
+
+    <!-- Banner -->
+
+    <section class="collection-banner">
+
+        <h1>Collections</h1>
+
+        <p>
+            Discover Premium Fashion Collections
+        </p>
+
+    </section>
+
+    <!-- Search -->
+
+    <section class="search-section container">
+
+        <div class="search-box">
+
+            <input type="text" id="search" placeholder="Search Products...">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </div>
+
+    </section>
+
+    <!-- ================= COLLECTION LAYOUT ================= -->
+
+    <section class="collection-layout container">
+
+        <!-- Sidebar -->
+
+        <aside class="filter-sidebar">
+
+            <!-- Category -->
+
+            <div class="filter-box">
+
+                <h3>Occasion</h3>
+
+                <label><input type="checkbox" class="filter" value="Summer"> Summer</label>
+
+                <label><input type="checkbox" class="filter" value="Party"> Party</label>
+
+                <label><input type="checkbox" class="filter" value="Beach"> Beach</label>
+
+                <label><input type="checkbox" class="filter" value="Formal"> Formal</label>
+
+            </div>
+
+            <hr>
+
+            <!-- Colors -->
+
+            <div class="filter-box">
+
+                <h3>Colors</h3>
+
+                <label><input type="checkbox" class="filter" value="Red"> Red</label>
+
+                <label><input type="checkbox" class="filter" value="Blue"> Blue</label>
+
+                <label><input type="checkbox" class="filter" value="White"> White</label>
+
+                <label><input type="checkbox" class="filter" value="Green"> Green</label>
+
+                <label><input type="checkbox" class="filter" value="Black"> Black</label>
+
+            </div>
+
+            <hr>
+
+            <!-- Arrivals -->
+
+            <div class="filter-box">
+
+                <h3>Arrivals</h3>
+
+                <label><input type="checkbox" class="filter" value="New"> New</label>
+
+                <label><input type="checkbox" class="filter" value="Old"> Old</label>
+
+            </div>
+
+        </aside>
+
+        <!-- Products -->
+
+        <div class="products-area">
+
+            <div class="products-grid">
+
+                <!-- Product 1 -->
+                <div class="product-card" data-name="Black T Shirt" data-color="Black" data-occasion="Summer"
+                    data-arrival="New">
+
+                    <div class="product-image">
+                        <img src="images/product1.jpg" alt="Black T-Shirt">
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Black T-Shirt</h3>
+                        <p class="price">₹999</p>
+                    </div>
+
+                </div>
+
+                <!-- Product 2 -->
+
+                <div class="product-card" data-name="White T Shirt" data-color="White" data-occasion="Summer"
+                    data-arrival="New">
+
+                    <div class="product-image">
+                        <img src="images/product2 (2).jpg" alt="White T Shirt">
+                    </div>
+
+                    <div class="product-info">
+                        <h3>White T-Shirt</h3>
+                        <p class="price">₹1099</p>
+                    </div>
+
+                </div>
+
+                <!-- Product 3 -->
+
+                <div class="product-card" data-name="Blue Jeans" data-color="Blue" data-occasion="Casual"
+                    data-arrival="New">
+
+                    <div class="product-image">
+                        <img src="images/product3.jpg" alt="Blue Jeans">
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Blue Jeans</h3>
+                        <p class="price">₹1899</p>
+                    </div>
+
+                </div>
+
+                <!-- Product 4 -->
+
+                <div class="product-card" data-name="Black Jacket" data-color="Black" data-occasion="Winter"
+                    data-arrival="New">
+
+                    <div class="product-image">
+                        <img src="images/product4.jpg" alt="Black Jacket">
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Black Jacket</h3>
+                        <p class="price">₹2099</p>
+                    </div>
+
+                </div>
+
+                <!-- Product 5 -->
+
+                <div class="product-card" data-name="Green Hoodie" data-color="Green" data-occasion="Winter"
+                    data-arrival="Old">
+
+                    <div class="product-image">
+                        <img src="images/product5.jpg" alt="Green Hoodie">
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Green Hoodie</h3>
+                        <p class="price">₹2499</p>
+                    </div>
+
+                </div>
+
+                <!-- Product 6 -->
+
+                <div class="product-card" data-name="Red Dress" data-color="Red" data-occasion="Party"
+                    data-arrival="New">
+
+                    <div class="product-image">
+                        <img src="images/product6.jpg" alt="Red Dress">
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Red Dress</h3>
+                        <p class="price">₹3299</p>
+                    </div>
+
+                </div>
+
+                <!-- Product 7 -->
+
+                <div class="product-card" data-name="Blue Shirt" data-color="Blue" data-occasion="Formal"
+                    data-arrival="Old">
+
+                    <div class="product-image">
+                        <img src="images/product8.jpg" alt="Blue Shirt">
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Blue Shirt</h3>
+                        <p class="price">₹1599</p>
+                    </div>
+
+                </div>
+
+                <!-- Product 8 -->
+
+                <div class="product-card" data-name="White Sneakers" data-color="White" data-occasion="Casual"
+                    data-arrival="New">
+
+                    <div class="product-image">
+                        <img src="images/product7.jpg" alt="White Sneakers">
+                    </div>
+
+                    <div class="product-info">
+                        <h3>White Sneakers</h3>
+                        <p class="price">₹2799</p>
+                    </div>
+
+                </div>
+
+                <!-- Product 9 -->
+
+                <div class="product-card" data-name="Brown Jacket" data-color="Brown" data-occasion="Winter"
+                    data-arrival="Old">
+
+                    <div class="product-image">
+                        <img src="images/product9.jpg" alt="Brown Jacket">
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Brown Jacket</h3>
+                        <p class="price">₹3599</p>
+                    </div>
+
+                </div>
+
+                <!-- Product 10 -->
+
+                <div class="product-card" data-name="Black Jeans" data-color="Black" data-occasion="Casual"
+                    data-arrival="New">
+
+                    <div class="product-image">
+                        <img src="images/product12.jpg" alt="Black Jeans">
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Black Jeans</h3>
+                        <p class="price">₹1799</p>
+                    </div>
+
+                </div>
+
+                <!-- Product 11 -->
+
+                <div class="product-card" data-name="Yellow Dress" data-color="Yellow" data-occasion="Party"
+                    data-arrival="New">
+
+                    <div class="product-image">
+                        <img src="images/product10.jpg" alt="Yellow Dress">
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Yellow Dress</h3>
+                        <p class="price">₹2899</p>
+                    </div>
+
+                </div>
+
+                <!-- Product 12 -->
+
+                <div class="product-card" data-name="Grey Hoodie" data-color="Grey" data-occasion="Winter"
+                    data-arrival="Old">
+
+                    <div class="product-image">
+                        <img src="images/product11.jpg" alt="Grey Hoodie">
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Grey Hoodie</h3>
+                        <p class="price">₹2299</p>
+                    </div>
+
+                </div>
+
+                <!-- Product 13 -->
+
+                <div class="product-card" data-name="Palm Breeze Resort Shirt" data-color="Grey" data-occasion="Beach"
+                    data-arrival="Old">
+
+                    <div class="product-image">
+                        <img src="images/product14.png" alt="Palm Breeze Resort Shirt">
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Palm Breeze Resort Shirt</h3>
+                        <p class="price">₹2799</p>
+                    </div>
+
+                </div>
+
+                <!-- Product 14 -->
+
+                <div class="product-card" data-name="Coastal Escape Resort Shirt" data-color="Grey"
+                    data-occasion="Beach" data-arrival="Old">
+
+                    <div class="product-image">
+                        <img src="images/product13.png" alt="Coastal Escape Resort Shirt">
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Coastal Escape Resort Shirt</h3>
+                        <p class="price">₹3199</p>
+                    </div>
+
+                </div>
+
+
+                <!-- Product 15 -->
+
+                <div class="product-card" data-name="Island Vibes Resort Shirt" data-color="Grey" data-occasion="Beach"
+                    data-arrival="Old">
+
+                    <div class="product-image">
+                        <img src="images/product15.png" alt="Island Vibes Resort Shirt">
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Island Vibes Resort Shirt</h3>
+                        <p class="price">₹3499</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================
+NEWSLETTER
+==========================-->
+
+    <section class="newsletter">
+
+        <div class="container">
+
+            <div class="newsletter-content">
+
+                <h2>Join Our Newsletter</h2>
+
+                <p>
+                    Subscribe to receive exclusive offers,
+                    new arrivals and fashion updates.
+                </p>
+
+                <div class="newsletter-box">
+
+                    <input type="email" placeholder="Enter your email">
+
+                    <button>
+
+                        Subscribe
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--=========================
+FOOTER
+==========================-->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-about">
+
+                    <h2>Nostra</h2>
+
+                    <p>
+
+                        Discover premium fashion collections
+                        with timeless style and modern trends.
+
+                    </p>
+
+                </div>
+
+
+                 <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">🏠 Home</a>
+
+                <a href="#newarrival">👕 New Arrival</a>
+
+                <a href="#wanted">🔥 Most Wanted</a>
+
+                <a href="collection.html">🛍️ Collections</a>
+
+                <a href="contact.html">📩 Contact</a>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Customer Service</h3>
+
+                <a href="#">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    Shipping
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    Returns
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-circle-question"></i>
+                    FAQs
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-file-contract"></i>
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+
+                <div class="footer-social">
+
+                    <h3>Follow Us</h3>
+
+                    <div class="social-icons">
+
+                        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a href="https://x.com/" target="_blank" aria-label="X">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p class="copyright">
+
+                © 2026 Nostra. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
